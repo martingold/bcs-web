@@ -13,7 +13,7 @@ module.exports = function (grunt) {
             },
             js: {
                 files: ['src/js/**/*.js'],
-                tasks: ['uglify:front', 'uglify:admin'],
+                tasks: ['uglify'],
                 livereload: true
             },
             css: {

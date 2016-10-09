@@ -52,6 +52,7 @@
 
   .navbar.collapsed {
     nav {
+      overflow: hidden;
       position: absolute;
       top: $navbar-height;
       left: 0;
