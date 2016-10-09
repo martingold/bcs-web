@@ -1,0 +1,36 @@
+.navbar {
+
+
+  ul {
+    background-color: $primary-color;
+    border-bottom: solid $primary-color-dark 2px;
+    list-style: none;
+    display: block;
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: 10px;
+      margin-right: 10px;
+    }
+    a{
+      color: $base-font-color;
+      text-decoration: none;
+    }
+  }
+  .icon {
+    color: $base-font-color;
+    float: right;
+    display: none;
+  }
+}
+
+@media all and (max-width: $max-mobile) {
+  .navbar{
+    ul li:not(:first-child):not(.icon){
+      display: none;
+    }
+    .icon{
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.grid-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-container * {
+  box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  padding: $gutter-width;
+}
+
+@include make-columns($columns);
+
+.no-padding{
+  padding:0;
+}
