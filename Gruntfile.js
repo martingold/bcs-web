@@ -35,7 +35,9 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'www/dist/js/main.min.js': [
-                        'src/js/main.js'
+                        'bower_components/jquery/dist/jquery.min.js',
+                        'src/js/main.js',
+                        'src/js/components/*'
                     ]
                 }
             }
