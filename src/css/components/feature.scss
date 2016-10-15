@@ -1,15 +1,29 @@
 .feature{
   .image{
-    float:left;
-    display: inline;
     img{
       width: 100px;
       height: 100px;
       border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
+
   .desc{
-    float:left;
-    display: inline;
+    .headline{
+      font-family: $accent-font, sans-serif;
+      font-size: $base-font-size*1.2;
+    }
+  }
+}
+
+@media screen and (max-width: $max-tablet){
+  .feature{
+    .image{
+      padding-bottom: 0;
+      padding-top: 30px;
+      width: 100%;
+    }
   }
 }

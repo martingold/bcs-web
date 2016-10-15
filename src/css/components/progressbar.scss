@@ -1,0 +1,43 @@
+.progressbar {
+  display: inline-block;
+
+  width: 200px;
+  height: 15px;
+  border-radius: 4px;
+  background: #ffffff;
+
+  .bar {
+    height: 100%;
+    border-radius: 4px;
+  }
+
+  .bar.csfd {
+    background: #b01;
+    width: 84%;
+  }
+  .bar.imdb {
+    background: #E1B42D;
+    width: 88%;
+  }
+  .bar.tomatoes {
+    background: #F0512C;
+    width: 97%;
+  }
+
+  .bar.meta {
+    background: #FFCD34;
+    width: 78%;
+  }
+}
+
+.rating{
+  list-style: none;
+  li{
+    padding: 2px;
+  }
+  .value{
+    display: inline-block;
+    width: 60px;
+    padding-left: 10px;
+  }
+}

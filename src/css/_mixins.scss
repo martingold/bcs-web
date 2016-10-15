@@ -8,13 +8,10 @@
 
   //Small desktop
   @media all and (max-width: $max-desktop) {
-    .col-1{width: 25%}
-    .col-2{width: 33%}
-    .col-3{width: 50%}
-    .col-4{width: 66%}
-    @for $i from 4 through $num {
+    @for $i from 1 through $num {
+      $w: percentage($i/$num);
       .col-#{$i} {
-        width: 100%;
+        width: $w;
       }
     }
   }
