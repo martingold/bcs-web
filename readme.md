@@ -20,12 +20,12 @@ Requires installed ImageMagick.
 Can be tested with
 
 ```bash
-	mogrify -v
+	mogrify --version
 ```
 
 Example to generate gallery thumbnails:
 
 ```bash
 	cd www/assets/images/gallery
-    mogrify -resize 200x -format jpg -quality 80 -path thumb/ *.jpg
+    mogrify -resize 300x -format jpg -quality 80 -path thumb/ *.jpg
 ```
