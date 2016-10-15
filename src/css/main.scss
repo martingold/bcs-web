@@ -1,8 +1,10 @@
 @import 'variables';
 @import 'mixins';
 
-@import 'grid';
-
+@import 'components/grid';
 @import 'components/navbar';
-@import 'components/animations';
 @import 'components/body';
+@import 'components/feature';
+
+
+@import 'custom';

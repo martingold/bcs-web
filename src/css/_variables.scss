@@ -1,9 +1,6 @@
 $columns: 12;
 $gutter-width: 12px;
 
-$base-font-size: 13px;
-$base-font-color: #F0F0F0;
-
 $gray-base: #000000;
 $gray-12: lighten($gray-base, 12);
 $gray-25: lighten($gray-base, 25);
@@ -12,15 +9,27 @@ $gray-50: lighten($gray-base, 50);
 $gray-67: lighten($gray-base, 67);
 $gray-75: lighten($gray-base, 75);
 $gray-87: lighten($gray-base, 87);
+$gray-90: lighten($gray-base, 90);
+$gray-95: lighten($gray-base, 95);
 
-$primary-color: #283593;
-$accent-color: #F06292;
 
-$primary-color-dark: darken($primary-color, 12.5);
-$accent-color-dark: darken($accent-color, 12.5);
 
 $max-mobile: 480px;
 $max-tablet: 992px;
 $max-desktop: 1200px;
 
+$primary-color: #FCDE4C;
+$accent-color: #F06292;
+
+$primary-color-dark: darken($primary-color, 12.5);
+$accent-color-dark: darken($accent-color, 12.5);
+
+$base-font-size: 13px;
+$base-font-color: $gray-12;
+
 $navbar-height: 40px;
+$navbar-font-color: $gray-37;
+
+
+$main-font: 'Open Sans';
+$accent-font: 'Roboto';

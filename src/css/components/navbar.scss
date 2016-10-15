@@ -16,31 +16,38 @@
     display: inline-block;
     padding: 0;
     a {
+      font-size: $base-font-size;
       display: inline-block;
       padding: 10px;
       margin-right: 10px;
-      color: $base-font-color;
+      color: $navbar-font-color;
       text-decoration: none;
+      font-family: $accent-font, sans-serif;
+    }
+    a:hover{
+      background-color: $primary-color-dark;
     }
   }
   .toggle {
-    color: $base-font-color;
+    color: $navbar-font-color;
     float: right;
     display: none;
     padding: 10px;
     font-size: 20px;
   }
   .brand {
+    font-size: $base-font-size*1.2;
     padding: 10px;
     float: left;
+    font-family: $accent-font, sans-serif;
     a {
-      color: $base-font-color;
+      color: $navbar-font-color;
       text-decoration: none;
     }
   }
 }
 
-@media all and (max-width: $max-mobile) {
+@media all and (max-width: $max-tablet) {
   .navbar {
     nav a {
       display: none;
@@ -58,6 +65,8 @@
       left: 0;
       right: 0;
       a {
+        padding-left: 25px;
+        border-bottom: solid $primary-color-dark 1px;
         background-color: $primary-color;
         margin-right: 0;
         display: block;

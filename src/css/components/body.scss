@@ -1,3 +1,15 @@
 body{
   margin-top: $navbar-height;
+  color: $base-font-color;
+  font-size: $base-font-size;
+  font-family: $main-font, sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $accent-font, sans-serif;
+}
+
+.grid-container{
+  background-color: $gray-95;
 }

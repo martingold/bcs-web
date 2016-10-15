@@ -73,6 +73,22 @@ module.exports = function (grunt) {
                     annotation: false
                 }
             }
+        },
+        responsive_images: {
+            feature: {
+                options: {
+                    engine: 'gm',
+                    sizes: [{
+                        width: 320,
+                        height: 320
+                    }]
+                },
+                files: [{
+                    src: ['www/assets/images/source/feature/*.*'],
+                    cwd: 'test/',
+                    dest: 'www/assets/images/feature/'
+                }]
+            }
         }
     });
 
