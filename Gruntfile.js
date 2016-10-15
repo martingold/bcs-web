@@ -36,6 +36,7 @@ module.exports = function (grunt) {
                 files: {
                     'www/dist/js/main.min.js': [
                         'bower_components/jquery/dist/jquery.min.js',
+                        'bower_components/magnific-popup/dist/jquery.magnific-popup.js',
                         'src/js/main.js',
                         'src/js/components/*'
                     ]
@@ -73,25 +74,9 @@ module.exports = function (grunt) {
                     annotation: false
                 }
             }
-        },
-        responsive_images: {
-            feature: {
-                options: {
-                    engine: 'gm',
-                    sizes: [{
-                        width: 320,
-                        height: 320
-                    }]
-                },
-                files: [{
-                    src: ['www/assets/images/source/feature/*.*'],
-                    cwd: 'test/',
-                    dest: 'www/assets/images/feature/'
-                }]
-            }
         }
     });
 
 
-    grunt.registerTask('default', ['uglify', 'autoprefixer', 'sass:dist', 'sass:vendor', 'watch']);
+    grunt.registerTask('default', ['uglify', 'sass', 'autoprefixer']);
 };
