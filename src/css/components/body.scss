@@ -4,40 +4,47 @@ body{
   font-size: $base-font-size;
   font-family: $main-font, sans-serif;
   font-weight: 300;
+
+  background-image: url('/assets/images/source/bcs-back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: $accent-font, sans-serif;
   color: darken($base-font-color, 5);
+  font-weight: 400;
+}
+
+a{
+  color: darken($primary-color, 50);
+}
+
+a:hover{
+  color: darken($primary-color-dark, 50);
+}
+
+a:visited{
+  color: darken($accent-color-dark, 30);
+}
+
+a:visited:hover{
+  color: darken($accent-color-dark, 50);
 }
 
 .grid-container{
   background-color: $gray-95;
 }
 
-hr{
-  display: block;
-  margin-bottom: 25px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border: solid $gray-75 1px;
-  height: 1px;
-}
+@media all and (max-width: $max-desktop) {
+  .github-corner{
+    display: none;
+  }
 
-header.header{
-  background-image: url('/assets/images/source/bcs-header.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
-  width: 100%;
+  body {
+    background-image: none;
+  }
 }
-
-body {
-  background-image: url('/assets/images/source/bcs-back.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out

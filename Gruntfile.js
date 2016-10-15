@@ -18,7 +18,7 @@ module.exports = function (grunt) {
             },
             css: {
                 files: ['src/**/*.scss'],
-                tasks: ['sass:dist'],
+                tasks: ['sass:dist', 'sass:vendor'],
                 livereload: true
             },
             vendor: {

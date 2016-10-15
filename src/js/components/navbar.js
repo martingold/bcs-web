@@ -14,8 +14,7 @@ $.fn.navbar = function (options) {
         icon.click(function () {
             if (opt.push_content) {
                 if(elem.hasClass(opt.collapse_class)){
-                    icon.toggleClass('fa-bars');
-                    icon.toggleClass('fa-close');
+                    icon.toggleClass('is-active');
                     $('body').animate({
                         'margin-top': elem.outerHeight() + "px"
                     }, opt.animation_speed);
@@ -25,8 +24,7 @@ $.fn.navbar = function (options) {
                         elem.removeClass(opt.collapse_class);
                     });
                 }else{
-                    icon.toggleClass('fa-bars');
-                    icon.toggleClass('fa-close');
+                    icon.toggleClass('is-active');
                     menu.css('height', 0);
                     elem.addClass(opt.collapse_class);
                     var h = menu.get(0).scrollHeight;

@@ -1,0 +1,21 @@
+.gallery{
+  img{
+    width: 100%;
+  }
+}
+
+@media all and (max-width: $max-tablet){
+  .gallery{
+    .col-3{
+      width: 50%;
+    }
+  }
+}
+
+@media all and (max-width: $max-mobile){
+  .gallery{
+    .col-3{
+      width: 100%;
+    }
+  }
+}

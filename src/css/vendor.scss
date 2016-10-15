@@ -1,3 +1,15 @@
-@import '../../bower_components/font-awesome/scss/font-awesome';
+
+$hamburger-types: (
+        collapse
+);
+
+$hamburger-layer-width                     : 30px;
+$hamburger-layer-height                    : 3px;
+$hamburger-layer-spacing                   : 7px;
+$hamburger-padding-x                       : 8px;
+$hamburger-padding-y                       : 8px;
+$hamburger-layer-color                     : #424242;
+
+@import '../../bower_components/css-hamburgers/_sass/hamburgers/hamburgers';
 
 @import '../../bower_components/magnific-popup/src/css/main';
