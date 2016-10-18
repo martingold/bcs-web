@@ -2,7 +2,8 @@ $.fn.hero = function (options) {
 
     var opt = $.extend({
         class_list: [],
-        speed: 3000
+        speed: 3000,
+        delay: 3000
     }, options);
 
     if(opt.class_list.length == 0){
@@ -14,8 +15,9 @@ $.fn.hero = function (options) {
 
     return this.each(function () {
         var elem = $(this);
-        nextImage(elem);
+        elem.find('.hero-image:nth(1)').show();
 
+        setTimeout(nextImage, opt.delay, elem);
         elem.find('.hero-image:first-child()').show();
     });
 

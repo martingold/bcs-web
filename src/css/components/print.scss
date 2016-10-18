@@ -1,0 +1,48 @@
+@media print {
+  .hero{
+    display:none;
+  }
+
+  .navbar{
+    display:none;
+  }
+
+  .github-corner{
+    display: none;
+  }
+
+  .video-wrap{
+    display: none;
+  }
+
+  .progressbar{
+    -webkit-print-color-adjust: exact;
+  }
+
+  p{
+    font-size: $base-font-size * .8;
+  }
+
+  h1{
+    font-size: $base-font-size *1.6;
+  }
+  h1{
+    font-size: $base-font-size *1.4;
+  }
+  h1{
+    font-size: $base-font-size *1.3;
+  }
+
+  p{
+    margin: 0;
+  }
+
+  h1,h2,h3,h4,h5,h6,h7{
+    margin: 0;
+  }
+
+  .feature, .news{
+   page-break-inside: avoid;
+  }
+
+}

@@ -24,6 +24,7 @@ $(function () {
     
     $('.hero').hero({
         class_list: ['hero-1', 'hero-2', 'hero-3', 'hero-4'],
-        speed: 5000
+        speed: 5000,
+        delay: 2000
     })
 });

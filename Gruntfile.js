@@ -74,9 +74,20 @@ module.exports = function (grunt) {
                     annotation: false
                 }
             }
+        },
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'www/dist/css',
+                    src: ['main.css', 'vendor.css'],
+                    dest: 'www/dist/css',
+                    ext: '.min.css'
+                }]
+            }
         }
     });
 
 
-    grunt.registerTask('default', ['uglify', 'sass', 'autoprefixer']);
+    grunt.registerTask('default', ['uglify', 'sass', 'autoprefixer', 'cssmin']);
 };

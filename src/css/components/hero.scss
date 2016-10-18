@@ -24,8 +24,12 @@
     filter:brightness(40%);
   }
 
+  .hero-image:first-child{
+    top: 0;
+    display: block;
+  }
   .active{
-    //animation: slide-out 5s ease-in;
+    animation: slide-out 5s ease-in-out ;
     display: block;
     z-index: 1;
   }
@@ -61,8 +65,8 @@
 
 @keyframes slide-out {
   0%   {top: 0;}
-  50%   {top: 0;}
-  100% {top: 0;}
+  50%   {top: 400px;}
+  100% {top: 400px;}
 }
 
 @media all and (max-width: $max-tablet) {
