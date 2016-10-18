@@ -21,4 +21,9 @@ $(function () {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
     });
+    
+    $('.hero').hero({
+        class_list: ['hero-1', 'hero-2', 'hero-3', 'hero-4'],
+        speed: 5000
+    })
 });

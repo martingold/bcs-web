@@ -1,11 +1,12 @@
 .navbar {
   background-color: $primary-color;
-  border-bottom: solid $primary-color-dark 2px;
+  border-bottom: solid $primary-color-dark 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 40px;
+  z-index: 1001;
 
   .nav-container {
     max-width: 1200px;
@@ -18,7 +19,7 @@
     a {
       font-size: $base-font-size;
       display: inline-block;
-      padding: 10px;
+      padding: 12px;
       margin-right: 10px;
       color: $navbar-font-color;
       text-decoration: none;

@@ -29,3 +29,10 @@ Example to generate gallery thumbnails:
 	cd www/assets/images/gallery
     mogrify -resize 300x -format jpg -quality 80 -path thumb/ *.jpg
 ```
+
+Example to generate feature thumbnails
+
+```bash
+    cd www/assets/images/source/feature
+    mogrify -resize 100x100 -format jpg -quality 80 -path ../../feature/ *.jpg
+```

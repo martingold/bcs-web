@@ -1,8 +1,36 @@
-.navbar-brand-image{
+.navbar-brand-image {
   width: 200px;
 }
 
-.not-found{
+.not-found {
   margin-top: 40px;
   text-align: center;
+}
+
+.viewing-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  border: solid 1px $gray-67;
+
+  td, th {
+    padding: 6px;
+  }
+
+  td {
+    border-bottom: solid 1px $gray-67;
+  }
+
+  td:first-child {
+    background: #eeeeee;
+    border-right: solid 1px $gray-67;
+  }
+
+  th:first-child {
+    border-right: solid 1px $gray-67;
+  }
+  thead {
+    border-bottom: solid 1px $gray-67;
+    background-color: #eeeeee;
+  }
 }
