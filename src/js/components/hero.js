@@ -22,7 +22,7 @@ $.fn.hero = function (options) {
     });
 
     function nextImage(elem){
-        elem.find('.'+opt.class_list[index]).removeClass('active')
+        elem.find('.'+opt.class_list[index]).removeClass('active');
         elem.find('.'+opt.class_list[getNext()]).removeClass('next');
         index++;
         if(index > opt.class_list.length - 1){
